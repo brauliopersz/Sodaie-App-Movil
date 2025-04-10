@@ -1,0 +1,7 @@
+{
+  "name": "Sodaie-App-Movil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
