@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
-import { MyTabsComponent } from 'src/app/components/my-tabs/my-tabs.component';
 
 const routes: Routes = [
   {
@@ -9,12 +8,7 @@ const routes: Routes = [
     component: HomePage,
   },
 
-  {
-    path:'MyTabsComponent',
-    component: MyTabsComponent,
 
-
-  }
 ];
 
 @NgModule({
