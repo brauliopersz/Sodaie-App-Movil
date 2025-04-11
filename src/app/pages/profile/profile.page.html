@@ -1,15 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="medium">Perfil</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <p>AQUI VA LA INFORMACIÓN DEL PERFIL</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <h1>Imágen de Perfil</h1>
+              <ion-card-header>
+                <div>
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <h1>José Pérez (Jose Congas)</h1>
+                </div>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <h1>Información Personal</h1>
+              <p>Nombre: José Andrés</p>
+              <p>Apellido: Pérez Almánzar</p>
+              <p>Documento de identidad: 402-2678214-8</p>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <h1>Contactos</h1>
+              <p>Número de Celular:809-220-1111</p>
+              <p>Número de Teléfono:809-458-7842</p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <h1>Redes Sociales</h1>
+              <div>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </ion-content>
