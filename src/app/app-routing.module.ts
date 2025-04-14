@@ -42,12 +42,6 @@ const routes: Routes = [
         },
       ]
   },
-  
-  {
-    path: '',
-    redirectTo: 'my-tabs', // Redirige a la página de los tabs al inicio
-    pathMatch: 'full'
-  },
 ];
 
 @NgModule({
