@@ -1,13 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>repertoire</ion-title>
+    <ion-title>Repertorio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">repertoire</ion-title>
+      <ion-title size="medium">Repertorio</ion-title>
     </ion-toolbar>
   </ion-header>
+
+    <ion-item *ngFor="let item of items" detail="true">
+      <ion-label>
+        <p>Título: {{item.titulo}}</p>
+        <p>Artista / Banda: {{item.artista}}</p>
+        <p>Participación: {{item.participacion}}</p>
+      </ion-label>
+    </ion-item>
+    
+    <ng-template #noItems>
+      <p>No hay elementos para mostrar.</p>
+    </ng-template>
 </ion-content>
