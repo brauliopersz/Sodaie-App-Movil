@@ -11,13 +11,17 @@
     </ion-toolbar>
   </ion-header>
 
-    <ion-item *ngFor="let item of items" detail="true">
-      <ion-label>
-        <p>Título: {{item.titulo}}</p>
-        <p>Artista / Banda: {{item.artista}}</p>
-        <p>Participación: {{item.participacion}}</p>
-      </ion-label>
-    </ion-item>
+    
+      <ion-card>
+        <ion-item button *ngFor="let item of items" detail="true">
+          <ion-label routerLink = "/repertoire-detail">
+            <p>Título: {{item.titulo}}</p>
+            <p>Artista / Banda: {{item.artista}}</p>
+            <p>Participación: {{item.participacion}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+
     
     <ng-template #noItems>
       <p>No hay elementos para mostrar.</p>
