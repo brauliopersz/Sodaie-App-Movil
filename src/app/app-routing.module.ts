@@ -41,7 +41,11 @@ const routes: Routes = [
           loadChildren: () => import('./pages/repartos/repartos.module').then(m => m.RepartosPageModule)
         },
       ]
+  },  {
+    path: 'repertoire-detail',
+    loadChildren: () => import('./pages/repertoire-detail/repertoire-detail.module').then( m => m.RepertoireDetailPageModule)
   },
+
 ];
 
 @NgModule({
