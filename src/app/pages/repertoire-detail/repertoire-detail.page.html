@@ -6,8 +6,33 @@
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">repertoire-detail</ion-title>
+
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <!-- Se configura la ruta para retornar a la seccion principal y se establece la direccion de ruta-->
+        <ion-button routerLink="/my-tabs/repertoire" routerDirection="back">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title size="medium">Detalles</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>HOLA PERDIDA</ion-card-title>
+      <ion-card-subtitle>Título</ion-card-subtitle>
+    </ion-card-header>
+  
+
+    <ion-card-content>
+      <p><strong>Artista/Banda:</strong> EL BLACHY</p>
+      <p><strong>Participación:</strong> INTERPRETE, COROS</p>
+      <p><strong>Album:</strong> NO TIENE</p>
+      <p><strong>Año:</strong> 2025</p>
+    </ion-card-content>
+
+    
+  </ion-card>
+
 </ion-content>
